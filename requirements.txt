@@ -1,0 +1,25 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+scipy>=1.7.0
+
+# Detectron2 - install separately with:
+# pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu118/torch2.0/index.html
+# detectron2>=0.6
+
+# ROS2 dependencies (installed via rosdep)
+# rclpy
+# sensor-msgs
+# geometry-msgs
+# std-msgs
+# cv-bridge
+
+# Optional dependencies
+mediapipe>=0.10.0  # For hand detection
+cloudpickle>=2.0.0  # For model loading
+
+# Kinova kortex_api - install from Kinova SDK
+# Follow: https://github.com/Kinovarobotics/kortex
+# kortex_api>=2.6.0

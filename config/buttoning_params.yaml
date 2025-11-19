@@ -1,0 +1,26 @@
+# Vision node parameters
+vision:
+  ros__parameters:
+    model_dir: "trainings/onedrv/clothes_button_4_epch500_roi256_lr0.001/"
+    camera_config: ""
+    score_threshold: 0.1
+    nms_threshold: 0.1
+    use_tracking: true
+    iou_threshold: 0.01
+    max_age: 10
+
+# Left arm parameters
+left_arm_controller:
+  ros__parameters:
+    arm_name: "left"
+    arm_ip: "192.168.2.10"
+    username: "admin"
+    password: "admin"
+
+# Right arm parameters
+right_arm_controller:
+  ros__parameters:
+    arm_name: "right"
+    arm_ip: "192.168.2.12"
+    username: "admin"
+    password: "admin"
