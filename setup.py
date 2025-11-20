@@ -24,6 +24,7 @@ setup(
         'scipy>=1.7.0',
         'mediapipe>=0.10.0',
         'cloudpickle>=2.0.0',
+        'pyrealsense2>=2.50.0',  # RealSense camera support
         # 'detectron2>=0.6',  # Install separately - see README
         # 'kortex_api>=2.6.0',  # Install from Kinova SDK - see README
     ],
@@ -32,9 +33,10 @@ setup(
     maintainer_email='haves@tekat.my.id',
     description='Python ROS2 package for dual-arm buttoning system',
     license='AGPL-3.0-or-later',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'realsense_node = pybuttoning.nodes.realsense_node:main',
+            'realsense_test_node = pybuttoning.nodes.realsense_test_node:main',
             'detection_node = pybuttoning.nodes.detection_node:main',
             'hand_detection_node = pybuttoning.nodes.hand_detection_node:main',
             'arm_controller_node = pybuttoning.nodes.arm_controller_node:main',

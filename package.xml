@@ -16,8 +16,9 @@
   <depend>geometry_msgs</depend>
   <depend>cv_bridge</depend>
   <depend>buttoning_msgs</depend>
-  <depend>realsense2_camera</depend>
-  <depend>realsense2_camera_msgs</depend>
+  
+  <!-- Note: realsense2_camera dependencies removed - using custom pyrealsense2 node -->
+  <!-- Python package pyrealsense2 should be installed via pip -->
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

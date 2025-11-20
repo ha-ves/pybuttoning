@@ -1,0 +1,25 @@
+# RealSense Camera Node Configuration
+
+realsense_node:
+  ros__parameters:
+    # RealSense DLL path (Windows only)
+    rs2_dll_path: 'rs2'
+    
+    # Stream configuration
+    width: 640
+    height: 480
+    fps: 30
+    
+    # Enable streams
+    enable_depth: true
+    enable_color: true
+    
+    # Align depth to color frame
+    align_to_color: true
+    
+    # Optional: JSON config file for depth sensor settings
+    # Example: 'C:/Users/admin/OneDrive - 東京都公立大学法人/===RESEARCH/l515_stereo_config_LowAmbient_close.json'
+    config_json: ''
+    
+    # Publishing rate (Hz)
+    publish_rate: 30.0
